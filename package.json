@@ -1,0 +1,16 @@
+{
+  "name": "fiber-death",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node --max-old-space-size=15 server.js",
+  "scripts": {
+    "nuke": "ab -n 10000 -c 100 http://localhost:6666/" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.0",
+    "fibers": "^1.0.15",
+    "gc-stats": "^1.0.0"
+  }
+}
